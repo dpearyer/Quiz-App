@@ -9,20 +9,20 @@ const questions = [
         ]
     },
     {
-        question: "What do I want right now?",
+        question: "How do you write 'Hello World' in Javascript?",
         answers:[
-            {text:"Three big burgers", correct:false},
-            {text:"2 warm buns", correct:true},
-            {text:"A hug", correct:false},
-            {text:"A cat", correct:false}
+            {text:"console.log('Hello World');", correct:true},
+            {text:"std::cout << 'Hello World';", correct:false},
+            {text:"System.out.println('Hello World');", correct:false},
+            {text:"All of the above", correct:false}
         ]
     },
     {
         question: "Who was the first programmer?",
         answers:[
             {text:"Steve Jobs", correct:false},
-            {text:"Ada Lovelace", correct:false},
-            {text:"Charles Babbage", correct:true},
+            {text:"Ada Lovelace", correct:true},
+            {text:"Charles Babbage", correct:false},
             {text:"Thomas Edison", correct:false}
         ]
     },
