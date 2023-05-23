@@ -1,11 +1,11 @@
 const questions = [
     {
-        question: "Who is the bestest?",
+        question: "What is the most popular programming language?",
         answers:[
-            {text:"A Koala", correct:false},
-            {text:"Super Woman", correct:false},
-            {text:"You", correct:true},
-            {text:"Killer Shark", correct:false}
+            {text:"Java", correct:false},
+            {text:"Python", correct:false},
+            {text:"Javascript", correct:true},
+            {text:"Cobol", correct:false}
         ]
     },
     {
@@ -18,12 +18,21 @@ const questions = [
         ]
     },
     {
-        question: "Why is the sky blue?",
+        question: "Who was the first programmer?",
         answers:[
-            {text:"Airheads in the ocean", correct:false},
-            {text:"Reflection from the sky", correct:false},
-            {text:"Cuz I like blue", correct:true},
-            {text:"Idk you tell me", correct:false}
+            {text:"Steve Jobs", correct:false},
+            {text:"Ada Lovelace", correct:false},
+            {text:"Charles Babbage", correct:true},
+            {text:"Thomas Edison", correct:false}
+        ]
+    },
+    {
+        question: "What are the advantages of javascript?",
+        answers:[
+            {text:"Runs within client browser", correct:false},
+            {text:"Simple and easy to learn", correct:false},
+            {text:"Client-side, reducing need for servers", correct:false},
+            {text:"All of 'em!", correct:true}
         ]
     }
 ];
