@@ -2,28 +2,28 @@ const questions = [
     {
         question: "Who is the bestest?",
         answers:[
-            {test:"A Koala", correct:false},
-            {test:"Super Woman", correct:false},
-            {test:"You", correct:true},
-            {test:"Killer Shark", correct:false}
+            {text:"A Koala", correct:false},
+            {text:"Super Woman", correct:false},
+            {text:"You", correct:true},
+            {text:"Killer Shark", correct:false}
         ]
     },
     {
         question: "What do I want right now?",
         answers:[
-            {test:"Three big burgers", correct:false},
-            {test:"2 warm buns", correct:true},
-            {test:"A hug", correct:false},
-            {test:"A cat", correct:false}
+            {text:"Three big burgers", correct:false},
+            {text:"2 warm buns", correct:true},
+            {text:"A hug", correct:false},
+            {text:"A cat", correct:false}
         ]
     },
     {
         question: "Why is the sky blue?",
         answers:[
-            {test:"Airheads in the ocean", correct:false},
-            {test:"Reflection from the sky", correct:false},
-            {test:"Cuz I like blue", correct:true},
-            {test:"Idk you tell me", correct:false}
+            {text:"Airheads in the ocean", correct:false},
+            {text:"Reflection from the sky", correct:false},
+            {text:"Cuz I like blue", correct:true},
+            {text:"Idk you tell me", correct:false}
         ]
     }
 ];
@@ -43,11 +43,12 @@ function startQuiz(){
 }
 
 function showQuestion(){
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex+1;
     questionElement.innerHTML = questionNo + ". "+ currentQuestion.question;
 
-    currentQuestion.answer.forEach(answer => {
+    currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
