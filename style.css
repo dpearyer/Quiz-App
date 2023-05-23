@@ -38,7 +38,7 @@ body{
 
 .btn {
     background: #fff;
-    color: #BACDDB;
+    color: #2B3467;
     font-weight: 500;
     width: 100%;
     border: 1px solid #BACDDB;
@@ -50,11 +50,17 @@ body{
     transition: all 0.3s;
 }
 
-.btn:hover{
+.btn:hover:not([disabled]){
     background: #BACDDB;
     color: #fff;
 
 }
+
+.btn:disabled{
+    cursor: default;
+}
+
+
 
 #next-btn{
     background: #CE5959;
